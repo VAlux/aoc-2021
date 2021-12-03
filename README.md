@@ -1,4 +1,4 @@
-## Advent of Code 2020 in Scala 3
+## Advent of Code 2021 in Scala 3
 
 ### Usage
 
