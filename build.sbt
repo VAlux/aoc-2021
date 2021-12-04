@@ -1,4 +1,4 @@
-val scala3Version = "3.0.1"
+val scala3Version = "3.1.0"
 
 inThisBuild(
   List(
@@ -10,7 +10,7 @@ inThisBuild(
 
 lazy val root = project
   .in(file("."))
-  .aggregate(shared, d1)
+  .aggregate(shared, d1, d2)
   .settings(
     name := "Advent of Code 2021"
   )
@@ -26,6 +26,13 @@ lazy val d1 = project
   .dependsOn(shared)
   .settings(
     name := "Day 1"
+  )
+
+lazy val d2 = project
+  .in(file("d2"))
+  .dependsOn(shared)
+  .settings(
+    name := "Day 2"
   )
 
 addCommandAlias("cd", "project")
