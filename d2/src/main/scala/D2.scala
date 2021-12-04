@@ -1,4 +1,3 @@
-import javax.tools.ForwardingFileObject
 case class Action(input: Int, command: Command)
 case class MovingState(horizontal: Int = 0, vertical: Int = 0, aim: Int = 0)
 
